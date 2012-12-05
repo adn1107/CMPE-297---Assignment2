@@ -1,0 +1,8 @@
+<!-- views/index.erb -->
+
+    <h1>Hello World</h1>
+    <ul>
+      <% Visit.all.each do |post| %>
+        <li><font color='blue'></font><%= post.date %> = <%= post.iprecs.count %></li>
+      <% end %>
+    <br />
